@@ -20,10 +20,10 @@ SENHA='labnexxera@2017!'    #informe aqui a senha de autenticação no servidor 
 ASSUNTO="Serviços com status Down"
 MENSAGEM="Os serviços: $RETORNO_WGET estão com status: Down"
 
-if [ "$1" == "" ] ;then
+if [ "$ASSUNTO" == "" ] ;then
 	ASSUNTO="SEM ASSUNTO"
 fi
-if [ "$2" == "" ] ;then
+if [ "$MENSAGEM" == "" ] ;then
 	MENSAGEM="SEM MENSAGEM"
 fi
 
